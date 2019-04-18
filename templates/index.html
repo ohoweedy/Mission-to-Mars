@@ -19,16 +19,21 @@
     </div>
       <div class="row">
         <div id="news-content" class="col-md-12">
+          <div style="padding:15px">
           <h4>Latest Mars News</h4>
+          <h4>{{ mars_info.date }}</h4>
           <h3>{{ mars_info.news_title }}</h3>
           <p>{{ mars_info.news_p }}</p>
+          </div>
         </div>
       </div>
       <div class="row">
         <div id="fimage-weather-facts-content" class="col-md-12">
             <div id="featured_image" class="col-md-8">
+                <div style="padding:8px;border:thin solid black;">
                 <h4>Featured Mars Image</h4>
-                <img src="{{ mars_info.featured_image_url }}" alt="Featured Image">
+                <img style='height: 100%; width: 100%; object-fit: contain' src="{{ mars_info.featured_image_url }}" alt="Featured Image">
+                </div>
             </div>
                 
             <div id="mars_table" class="col-md-4">
@@ -51,34 +56,44 @@
               <hr>
               <div class="row">
                 <div class="col-md-6">
+                  <div style="padding:4px;border:thick solid black;">
+                  <div style="text-align:center">
                 <h4>{{ mars_info.hemisphere_image_urls[0]['title'] }}</h4>
-                <img src="{{ mars_info.hemisphere_image_urls[0]['img_url'] }}" alt="First Image">
+                  </div>
+                <img style='height: 100%; width: 100%; object-fit: contain' src="{{ mars_info.hemisphere_image_urls[0]['img_url'] }}" alt="First Image">
+                </div>
                 </div>
                 <div class="col-md-6">
+                  <div style="padding:4px;border:thick solid black;">
+                  <div style="text-align:center">
                 <h4>{{ mars_info.hemisphere_image_urls[1]['title'] }}</h4>
-                <img src="{{ mars_info.hemisphere_image_urls[1]['img_url'] }}" alt="Second Image">
+                  </div>
+                <img style='height: 100%; width: 100%; object-fit: contain' src="{{ mars_info.hemisphere_image_urls[1]['img_url'] }}" alt="Second Image">
                 </div>
               </div>
+              </div>
           </div>
-
           <div id="second-row" class="col-md-12">
+            <br>
             <div class="row">
               <div class="col-md-6">
+                <div style="padding:4px;border:thick solid black;">
+                <div style="text-align:center">
               <h4>{{ mars_info.hemisphere_image_urls[2]['title'] }}</h4>
-              <img src="{{ mars_info.hemisphere_image_urls[2]['img_url'] }}" alt="Second Image">
+                </div>
+              <img style='height: 100%; width: 100%; object-fit: contain' src="{{ mars_info.hemisphere_image_urls[2]['img_url'] }}" alt="Third Image">
             </div>
+                </div>
               <div class="col-md-6">
+                <div style="padding:4px;border:thick solid black;">
+                <div style="text-align:center">
               <h4>{{ mars_info.hemisphere_image_urls[3]['title'] }}</h4>
-              <img src="{{ mars_info.hemisphere_image_urls[3]['img_url'] }}" alt="Second Image">
+                </div>
+              <img style='height: 100%; width: 100%; object-fit: contain' src="{{ mars_info.hemisphere_image_urls[3]['img_url'] }}" alt="Fourth Image">
             </div>
+                </div>
             </div>
-
-
-
-
-
-      </div>
+    </div>
   </div>
 </body>
-
 </html>

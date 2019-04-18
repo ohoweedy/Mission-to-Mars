@@ -11,3 +11,9 @@ h4 {
 img {
     object-fit: cover;
 }
+
+h5 {
+    font-size: 20px;
+    color: lightcoral;
+}
+

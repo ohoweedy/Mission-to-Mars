@@ -73,6 +73,11 @@ def scrape():
 
     mars_weather = soup3.find('p', class_='TweetTextSize TweetTextSize--normal js-tweet-text tweet-text').text
     mars_weather = mars_weather.replace('\n', ' ')
+    
+    mars_weather_clean = mars_weather.split("pic")
+    clean_mars_weather = mars_weather_clean[0]
+
+
 #     print(mars_weather)
 
     ##### Mars Facts #####
@@ -149,7 +154,7 @@ def scrape():
         "news_p": news_p,
         "date": date,
         "featured_image_url": featured_image_url,
-        "mars_weather": mars_weather,
+        "mars_weather": clean_mars_weather,
         "mars_html_table": mars_html_table,
         "hemisphere_image_urls": hemisphere_image_urls
     }
